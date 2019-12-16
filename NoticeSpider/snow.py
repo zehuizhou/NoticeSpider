@@ -1,0 +1,8 @@
+from snownlp import SnowNLP
+
+
+with open('data.txt', 'r', encoding='utf-8') as f:
+    content = f.read().splitlines()
+
+s = SnowNLP(content)
+print(s)
